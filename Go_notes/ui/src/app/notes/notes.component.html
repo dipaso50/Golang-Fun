@@ -1,0 +1,35 @@
+<h2>All Notes</h2>
+<table class="table">
+  <thead>
+  <tr>
+    <th>UUID</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Ranking</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody *ngIf="allNotes">
+  <tr *ngFor="let note of allNotes">
+    <td>{{note.id}}</td>
+    <td>{{note.title}}</td>
+    <td>{{note.message}}</td>
+    <td>{{note.ranking}}</td>
+    <td>
+      <button class="btn btn-danger" (click)="deleteTodo(note)">
+        <i class="fa fa-trash"></i>
+      </button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+ 
+<input placeholder="Title..." [(ngModel)]="noteTitle">
+<input placeholder="Detail..." [(ngModel)]="noteMessage">
+
+<select [(ngModel)]="noteRanking">
+  <option value="0">Low</option>
+  <option value="1">Medium</option>
+  <option value="2">High</option>
+</select>
+<button class="btn btn-primary" (click)="addNote()">Add</button>

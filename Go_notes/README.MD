@@ -67,15 +67,15 @@ $ go run Go_notes/server/main.go
 # Ejemplos
 ```sh
 //Get all notes
-$ curl http://localhost:8080/getAll
+$ curl http://localhost:3000/getAll
 [{"id":"bkh57ms4spfr3m9hr7ng","message":"Este es un test","ranking":0},{"id":"bkh57ms4spfr3m9hr7o0","message":"Esto es otro test","ranking":0}]
 
 //Get one note with id = bkh57ms4spfr3m9hr7o0 
-$ curl http://localhost:8080/getById/bkh57ms4spfr3m9hr7o0
+$ curl http://localhost:3000/getById/bkh57ms4spfr3m9hr7o0
 {"id":"bkh57ms4spfr3m9hr7o0","message":"Esto es otro test","ranking":0}
 
 //Add a note
-$ curl -s -XPOST -d'{"id":"","message":"este es otro message from curl","ranking":1}' http://localhost:8080/add
+$ curl -s -XPOST -d'{"id":"","title":"Este es el title" , "message":"este es otro message from curl","ranking":1}' http://localhost:3000/add
 
 //Delete a note with id = bkh57ms4spfr3m9hr7ng
 $ curl -i -X DELETE http://localhost:8080/delete/bkh57ms4spfr3m9hr7ng
@@ -84,7 +84,15 @@ $ curl -i -X DELETE http://localhost:8080/delete/bkh57ms4spfr3m9hr7ng
  
 
 # FrontEnd ([Angular](https://angular.io/))
-Pendiente implementar.
+Simple front end desarrollado en angular. Para ejecutar la aplicación situarse en el directorio ui y ejecutar :
+
+```sh
+$ ng serve
+```
+
+La aplicación es muy sencilla y permite consultar todas la notas guardadas, añadir y eliminar.
+
+![Screenshot](angularUI.jpg)
 
 # Licencia
 ----------------------------------------

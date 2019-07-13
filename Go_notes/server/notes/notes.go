@@ -5,6 +5,7 @@ import "github.com/rs/xid"
 //Note represents object type note
 type Note struct {
 	ID      string `json:"id"`
+	Title   string `json:"title"`
 	Msg     string `json:"message"`
 	Ranking int    `json:"ranking"`
 }
@@ -18,10 +19,11 @@ type NoteWarehouse interface {
 }
 
 //NewNote creates a object Note with message
-func NewNote(noteMsg string) Note {
+func NewNote(title string, noteMsg string, ranking int) Note {
 	return Note{
 		ID:      xid.New().String(),
 		Msg:     noteMsg,
-		Ranking: 0,
+		Title:   title,
+		Ranking: ranking,
 	}
 }

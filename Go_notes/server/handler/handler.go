@@ -61,7 +61,7 @@ func Add(currentWarehouse notes.NoteWarehouse) func(w http.ResponseWriter, r *ht
 
 		fmt.Println(n)
 
-		n2 := notes.NewNote(n.Msg)
+		n2 := notes.NewNote(n.Title, n.Msg, n.Ranking)
 
 		currentWarehouse.Add(n2)
 	}
