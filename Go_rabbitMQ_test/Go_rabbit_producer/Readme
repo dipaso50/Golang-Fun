@@ -1,0 +1,8 @@
+https://github.com/Pungyeon/go-rabbitmq-example
+
+Mysql
+https://hub.docker.com/_/mysql/
+usuario por defecto root , pass = my-secret-pw
+
+Inspect docker
+https://medium.com/coderscorner/connecting-to-mysql-through-docker-997aa2c090cc

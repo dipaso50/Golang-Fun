@@ -12,6 +12,9 @@ Aplicación cliente servidor desarrollada con [Golang](https://golang.org/) y [A
 
 Todo el desarrollo se ha basado en la aplicación de ejemplo del siguiente enlace: [Developing golang and angular apps](https://auth0.com/blog/developing-golang-and-angular-apps-part-1-backend-api/).
 
+# Go_rabbitMQ_test
+----------------------------------------
+ Microservicios que utilizan RabbitMQ para comunicarse, ejemplo basado en el tutorial de [RabbitMQ para Golang](https://www.rabbitmq.com/tutorials/tutorial-one-go.html).
 
  
  
