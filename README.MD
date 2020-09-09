@@ -16,5 +16,10 @@ Todo el desarrollo se ha basado en la aplicación de ejemplo del siguiente enlac
 ----------------------------------------
  Microservicios que utilizan RabbitMQ para comunicarse, ejemplo basado en el tutorial de [RabbitMQ para Golang](https://www.rabbitmq.com/tutorials/tutorial-one-go.html).
 
+
+# SincroSlice
+----------------------------------------
+ Ejemplo de sincronización de slice entre goroutines.
+
  
  
